@@ -37,7 +37,7 @@ alias plo="be powder link && be powder open"
 
 # Rails
 alias be="bundle exec"
-alias bi="bundle install --path vendor/bundle -j8"
+alias bi="bundle install -j8"
 alias devlog="tail -f -n 500 log/production.log log/development.log"
 alias sb="script/bootstrap"
 alias rs="be rails server"
@@ -45,8 +45,8 @@ alias rake="be rake"
 alias rspec="be rspec"  
 alias dbm="be rake db:migrate"  
 alias dbr="be rake db:rollback"  
+alias r="be rails"  
 alias rg="be rails generate"  
-alias rr="be rails runner"  
 alias rc="be rails console"  
 alias foreman="be foreman"  
 alias procman="be procman"  
@@ -75,7 +75,7 @@ alias gsh="git rev-parse --short HEAD"
 # Project folder that we can `c [tab]` to
 export PROJECTS=~/Development
 
-autoload -U ~/.oh-my-zsh/custom/plugins/deanperry/*(:t)
+autoload -U ~/.oh-my-zsh/custom/plugins/deanpcmad/*(:t)
 
 # Sublime Text
 alias s="st ."
