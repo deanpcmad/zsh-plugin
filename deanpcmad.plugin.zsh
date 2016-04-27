@@ -1,12 +1,11 @@
 # Export unlimited history and don't add any
-# references to resetting git or databases to the 
+# references to resetting git or databases to the
 # history to avoid accidental use.
-export HISTIGNORE='git reset --hard:rm -rf:rake db:reset'  
+export HISTIGNORE='git reset --hard:rm -rf:rake db:reset'
 export HISTCONTROL=ignorespace
 
 # Default RAILS_ENV to development
 export RAILS_ENV=development
-
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -22,18 +21,9 @@ alias g="git"
 alias h="history"
 alias gc=". /usr/local/bin/gitdate && git commit -v "
 
-
 # Curl
 alias curlxml="curl -H 'Accept: application/xml' -H 'Content-type: application/xml' "
 alias curljson="curl -H 'Accept: application/json' -H 'Content-type: application/json' "
-
-
-# Pow
-alias powenv="rvm env . -- --env > .powenv"
-alias pr="be powder restart"
-alias pal="be powder applog"
-alias plo="be powder link && be powder open"
-
 
 # Rails
 alias be="bundle exec"
@@ -41,23 +31,20 @@ alias bi="bundle install -j8"
 alias devlog="tail -f -n 500 log/production.log log/development.log"
 alias sb="script/bootstrap"
 alias rs="be rails server"
-alias rake="be rake"  
-alias rspec="be rspec"  
-alias dbm="be rake db:migrate"  
-alias dbr="be rake db:rollback"  
-alias r="be rails"  
-alias rg="be rails generate"  
-alias rc="be rails console"  
-alias foreman="be foreman"  
-alias procman="be procman"  
-alias cap="be cap"  
-alias yard="be yard"  
-alias rackup="be rackup"  
-alias annotate="be annotate"  
+alias rake="be rake"
+alias rspec="be rspec"
+alias dbm="be rake db:migrate"
+alias dbr="be rake db:rollback"
+alias r="be rails"
+alias rg="be rails generate"
+alias rc="be rails console"
+alias foreman="be foreman"
+alias procman="be procman"
+alias cap="be cap"
+alias yard="be yard"
+alias rackup="be rackup"
+alias annotate="be annotate"
 alias rbg="be rbg"
-
-
-
 
 # Git
 alias gl='git pull --prune'
@@ -79,7 +66,6 @@ autoload -U ~/.oh-my-zsh/custom/plugins/deanpcmad/*(:t)
 
 # Sublime Text
 alias s="st ."
-
 
 # vhosts
 alias hosts='sudo nano /etc/hosts'
