@@ -77,7 +77,7 @@ alias cwd='pwd | tr -d "\r\n" | xclip -selection clipboard'
 alias untar='tar xvf'
 
 # Pipe my public key to my clipboard.
-alias pubkey="more ~/.ssh/id_rsa.pub | xclip -selection clipboard | echo '=> Public key copied to pasteboard.'"
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
 # Pipe my private key to my clipboard.
 alias prikey="more ~/.ssh/id_rsa | xclip -selection clipboard | echo '=> Private key copied to pasteboard.'"
