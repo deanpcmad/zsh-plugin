@@ -1,7 +1,6 @@
 [user]
   name = Dean Perry
   email = me@deanpcmad.com
-  signingkey = E8DDD5A2
 
 [alias]
 
@@ -136,8 +135,6 @@
   # `git config --global push.default simple`. See http://git.io/mMah-w.
   default = matching
 
-[commit]
-  gpgsign = true
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean %f
