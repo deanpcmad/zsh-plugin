@@ -1,7 +1,6 @@
 [user]
   name = Dean Perry
-  email = me@deanpcmad.com
-  signingkey = E8DDD5A2
+  email = dean@voupe.com
 
 [alias]
 
@@ -87,7 +86,7 @@
   # Make `git rebase` safer on OS X
   # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
   trustctime = false
-  editor = /Applications/Sublime\\ Text.app/Contents/SharedSupport/bin/subl -n -w
+  editor = /usr/local/bin/subl -n -w
 
 [color]
 
@@ -136,8 +135,6 @@
   # `git config --global push.default simple`. See http://git.io/mMah-w.
   default = matching
 
-[commit]
-  gpgsign = true
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean %f
