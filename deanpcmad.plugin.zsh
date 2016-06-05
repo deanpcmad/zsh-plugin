@@ -60,7 +60,7 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gsh="git rev-parse --short HEAD"
 
 # Project folder that we can `c [tab]` to
-export PROJECTS=~/Development
+export PROJECTS=~/code
 
 autoload -U ~/.oh-my-zsh/custom/plugins/deanpcmad/*(:t)
 
