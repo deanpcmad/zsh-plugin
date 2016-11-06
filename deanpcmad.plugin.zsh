@@ -4,6 +4,8 @@
 export HISTIGNORE='git reset --hard:rm -rf:rake db:reset'
 export HISTCONTROL=ignorespace
 
+export EDITOR='subl -w'
+
 # Default RAILS_ENV to development
 export RAILS_ENV=development
 
