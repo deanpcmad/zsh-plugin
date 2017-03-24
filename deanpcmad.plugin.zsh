@@ -1,3 +1,6 @@
+# Set the PATH to include /usr/local/bin
+export PATH=$PATH:/usr/local/bin
+
 # Make Sublime Text the default editor
 export EDITOR='subl -w'
 
