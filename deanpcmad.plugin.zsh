@@ -35,8 +35,8 @@ alias rs="be rails server"
 alias rake="be rake"
 alias dbm="be rake db:migrate"
 alias dbr="be rake db:rollback"
-alias rg="rails generate"
-alias rc="rails console"
+alias rg="be rails generate"
+alias rc="be rails console"
 
 # Git
 alias gl='git pull --prune'
