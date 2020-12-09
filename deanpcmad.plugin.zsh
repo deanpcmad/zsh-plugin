@@ -1,5 +1,5 @@
 # Set the PATH to include /usr/local/bin
-export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/bin:/home/dean/.bin
 
 # Make Sublime Text the default editor
 export EDITOR='subl -w'
@@ -29,7 +29,7 @@ alias h="history"
 
 # Rails
 alias be="bundle exec"
-alias bi="bundle install -j12"
+alias bi="bundle install -j16"
 alias devlog="tail -f -n 500 log/production.log log/development.log"
 alias rs="be rails server"
 alias rake="be rake"
@@ -75,7 +75,4 @@ alias cwd='pwd | tr -d "\r\n" | xclip -selection clipboard'
 alias untar='tar xvf'
 
 # Pipe my public key to my clipboard.
-alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
-
-# Pipe my private key to my clipboard.
-# alias prikey="more ~/.ssh/id_rsa | xclip -selection clipboard | echo '=> Private key copied to pasteboard.'"
+alias pubkey="more ~/.ssh/id_rsa.pub | xclip -selection clipboard | echo '=> Public key copied to pasteboard.'"
