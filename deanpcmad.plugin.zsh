@@ -1,8 +1,7 @@
 # Set the PATH to include /usr/local/bin
 export PATH=$PATH:/usr/local/bin
 
-# Make Sublime Text the default editor
-export EDITOR='subl -w'
+export EDITOR='code -w'
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=50000000;
