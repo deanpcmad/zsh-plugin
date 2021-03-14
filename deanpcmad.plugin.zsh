@@ -1,8 +1,7 @@
 # Set the PATH to include /usr/local/bin
 export PATH=$PATH:/usr/local/bin:/home/dean/.bin
 
-# Make Sublime Text the default editor
-export EDITOR='subl -w'
+export EDITOR='code -w'
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=50000000;
@@ -31,15 +30,13 @@ alias h="history"
 alias be="bundle exec"
 alias bi="bundle install -j16"
 alias devlog="tail -f -n 500 log/production.log log/development.log"
-alias rs="be rails server"
-alias rake="be rake"
-alias dbm="be rake db:migrate"
-alias dbr="be rake db:rollback"
-alias rg="be rails generate"
-alias rc="be rails console"
+alias rs="./bin/rails server"
+alias rg="./bin/rails generate"
+alias rc="./bin/rails console"
+alias dbm="./bin/rails db:migrate"
+alias dbr="./bin/rails db:rollback"
 
 # Git
-alias gl='git pull --prune'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gp='git push origin'
 alias gd='git diff'
@@ -63,7 +60,7 @@ export PROJECTS=~/code
 autoload -U ~/.oh-my-zsh/custom/plugins/deanpcmad/*(:t)
 
 # Sublime Text
-alias s="subl ."
+# alias s="subl ."
 
 # vhosts
 alias hosts='sudo nano /etc/hosts'
