@@ -29,7 +29,7 @@ alias h="history"
 
 # Rails
 alias be="bundle exec"
-alias bi="bundle install -j16"
+alias bi="bundle install -j 6"
 alias devlog="tail -f -n 500 log/production.log log/development.log"
 alias rs="be rails server"
 alias rake="be rake"
@@ -63,7 +63,7 @@ export PROJECTS=~/code
 autoload -U ~/.oh-my-zsh/custom/plugins/deanpcmad/*(:t)
 
 # Sublime Text
-alias s="subl ."
+#alias s="subl ."
 
 # vhosts
 alias hosts='sudo nano /etc/hosts'
