@@ -38,6 +38,9 @@ alias dbr="be rake db:rollback"
 alias rg="be rails generate"
 alias rc="be rails console"
 
+# Jekyll
+alias js="be jekyll s -H 0.0.0.0"
+
 # Git
 alias gl='git pull --prune'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
