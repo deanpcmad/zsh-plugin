@@ -2,7 +2,7 @@
 export PATH=$PATH:/usr/local/bin:/home/dean/.bin
 
 # Make Sublime Text the default editor
-export EDITOR='subl -w'
+#export EDITOR='subl -w'
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=50000000;
@@ -38,6 +38,8 @@ alias dbr="be rake db:rollback"
 alias rg="be rails generate"
 alias rc="be rails console"
 
+alias dockerhoster="docker run -d -v /var/run/docker.sock:/tmp/docker.sock -v /etc/hosts:/tmp/hosts dvdarias/docker-hoster"
+
 # Jekyll
 alias js="be jekyll s -H 0.0.0.0"
 
@@ -64,9 +66,6 @@ alias curljson="curl -H 'Accept: application/json' -H 'Content-type: application
 export PROJECTS=~/code
 
 autoload -U ~/.oh-my-zsh/custom/plugins/deanpcmad/*(:t)
-
-# Sublime Text
-#alias s="subl ."
 
 # vhosts
 alias hosts='sudo nano /etc/hosts'
