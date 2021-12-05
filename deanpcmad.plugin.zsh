@@ -29,7 +29,7 @@ alias h="history"
 
 # Rails
 alias be="bundle exec"
-alias bi="bundle install -j 6"
+alias bi="bundle install -j $(nproc)"
 alias devlog="tail -f -n 500 log/production.log log/development.log"
 alias rs="be rails server -b 0.0.0.0"
 alias rake="be rake"
