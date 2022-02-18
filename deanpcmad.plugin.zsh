@@ -38,7 +38,11 @@ alias dbr="be rake db:rollback"
 alias rg="be rails generate"
 alias rc="be rails console"
 
+# Starts the docker-hoster container
 alias dockerhoster="docker run -d -v /var/run/docker.sock:/tmp/docker.sock -v /etc/hosts:/tmp/hosts dvdarias/docker-hoster"
+
+# SISH Tunnel
+alias sish="~/.oh-my-zsh/custom/plugins/deanpcmad/sish.sh"
 
 # Jekyll
 alias js="be jekyll s -H 0.0.0.0"
