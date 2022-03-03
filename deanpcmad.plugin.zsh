@@ -1,8 +1,8 @@
 # Set the PATH to include /usr/local/bin
 export PATH=$PATH:/usr/local/bin:/home/dean/.bin
 
-# Make Sublime Text the default editor
-#export EDITOR='subl -w'
+# Make VS Code the default editor
+export EDITOR='code --wait'
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=50000000;
@@ -29,7 +29,7 @@ alias h="history"
 
 # Rails
 alias be="bundle exec"
-alias bi="bundle install -j 6"
+alias bi="bundle install -j $(nproc)"
 alias devlog="tail -f -n 500 log/production.log log/development.log"
 alias rs="be rails server -b 0.0.0.0"
 alias rake="be rake"
@@ -38,7 +38,11 @@ alias dbr="be rake db:rollback"
 alias rg="be rails generate"
 alias rc="be rails console"
 
+# Starts the docker-hoster container
 alias dockerhoster="docker run -d -v /var/run/docker.sock:/tmp/docker.sock -v /etc/hosts:/tmp/hosts dvdarias/docker-hoster"
+
+# SISH Tunnel
+alias sish="~/.oh-my-zsh/custom/plugins/deanpcmad/sish.sh"
 
 # Jekyll
 alias js="be jekyll s -H 0.0.0.0"
