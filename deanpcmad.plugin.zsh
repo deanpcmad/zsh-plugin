@@ -83,5 +83,7 @@ alias untar='tar xvf'
 # Pipe my public key to my clipboard.
 alias pubkey="more ~/.ssh/id_rsa.pub | xclip -selection clipboard | echo '=> Public key copied to pasteboard.'"
 
+alias ytmp4="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'"
+
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/dean/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
