@@ -38,8 +38,8 @@ alias rc="bin/rails console"
 # Starts the docker-hoster container
 alias dockerhoster="docker run -d -v /var/run/docker.sock:/tmp/docker.sock -v /etc/hosts:/tmp/hosts dvdarias/docker-hoster"
 
-# SISH Tunnel
-alias sish="~/.oh-my-zsh/custom/plugins/deanpcmad/sish.sh"
+# SSH Tunnel
+alias tunnel="ssh -p 2222 -R 8080:localhost:3000 root@deanpcmad-tools"
 
 # Jekyll
 alias js="be jekyll s -H 0.0.0.0"
