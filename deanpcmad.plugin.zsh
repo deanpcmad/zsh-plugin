@@ -18,9 +18,6 @@ export RAILS_ENV=development
 # Easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 
 # Shortcuts
 alias dl="cd ~/Downloads"
@@ -31,12 +28,12 @@ alias h="history"
 alias be="bundle exec"
 alias bi="bundle install -j $(nproc)"
 alias devlog="tail -f -n 500 log/production.log log/development.log"
-alias rs="be rails server -b 0.0.0.0"
-alias rake="be rake"
-alias dbm="be rake db:migrate"
-alias dbr="be rake db:rollback"
-alias rg="be rails generate"
-alias rc="be rails console"
+alias rd="bin/dev"
+alias rs="bin/rails server -b 0.0.0.0"
+alias dbm="bin/rails db:migrate"
+alias dbr="bin/rails db:rollback"
+alias rg="bin/rails generate"
+alias rc="bin/rails console"
 
 # Starts the docker-hoster container
 alias dockerhoster="docker run -d -v /var/run/docker.sock:/tmp/docker.sock -v /etc/hosts:/tmp/hosts dvdarias/docker-hoster"
@@ -48,9 +45,7 @@ alias sish="~/.oh-my-zsh/custom/plugins/deanpcmad/sish.sh"
 alias js="be jekyll s -H 0.0.0.0"
 
 # Git
-alias gl='git pull --prune'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gp='git push origin'
 alias gd='git diff'
 alias ga='git add'
 alias gc='git commit'
