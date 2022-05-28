@@ -1,5 +1,5 @@
 # Set the PATH to include /usr/local/bin
-export PATH=$PATH:/usr/local/bin:/home/dean/.bin
+export PATH=$PATH:/usr/local/bin:/home/dean/.bin:/home/dean/.local/bin
 
 # Make VS Code the default editor
 export EDITOR='code --wait'
