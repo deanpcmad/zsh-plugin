@@ -38,6 +38,9 @@ alias rc="bin/rails console"
 # Starts the docker-hoster container
 alias dockerhoster="docker run -d -v /var/run/docker.sock:/tmp/docker.sock -v /etc/hosts:/tmp/hosts dvdarias/docker-hoster"
 
+# Run Docker Compose dev
+alias dcdev="docker compose -f docker-compose.dev.yml up"
+
 # SSH Tunnel
 alias tunnel="ssh -p 2222 -R 8080:localhost:3000 root@deanpcmad-tools"
 
