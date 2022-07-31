@@ -4,6 +4,7 @@ export PATH=$PATH:/usr/local/bin:/home/dean/.bin:/home/dean/.local/bin
 # Make VS Code the default editor
 export EDITOR='code --wait'
 
+
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=50000000;
 export HISTFILESIZE=$HISTSIZE;
