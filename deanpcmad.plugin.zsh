@@ -1,8 +1,8 @@
 # Set the PATH to include /usr/local/bin
 export PATH=$PATH:/usr/local/bin:/home/dean/.bin:/home/dean/.local/bin
 
-# Make VS Code the default editor
-export EDITOR='code --wait'
+# Make Sublime Text the default editor
+export EDITOR='subl --wait'
 
 
 # Larger bash history (allow 32³ entries; default is 500)
@@ -19,6 +19,8 @@ export RAILS_ENV=development
 # Easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
+
+alias s="subl ."
 
 # Shortcuts
 alias dl="cd ~/Downloads"
