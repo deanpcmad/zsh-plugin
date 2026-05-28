@@ -31,7 +31,7 @@ alias r="bin/rails"
 alias rs="bin/rails server"
 alias dbm="bin/rails db:migrate"
 alias dbr="bin/rails db:rollback"
-alias rg="bin/rails generate"
+#alias rg="bin/rails generate"
 alias rc="bin/rails console"
 
 alias dcdev="docker compose -f docker-compose.dev.yml up"
